@@ -10,7 +10,12 @@
 # (at your option) any later version.
 #---------------------------------------------------------------------
 
+from functools import partial
+
 from PyQt5.QtWidgets import QAction
+
+from qgis.core import QgsMessageLog, Qgis
+from qgis.gui import QgsPreviewEffect
 
 def classFactory(iface):
     return PreviewModePlugin(iface)
@@ -19,16 +24,40 @@ def classFactory(iface):
 class PreviewModePlugin:
     def __init__(self, iface):
         self.iface = iface
+        self.do_log = True
+        self.actions = []
+
 
     def initGui(self):
-        self.action = QAction('Toggle preview', self.iface.mainWindow())
-        self.action.triggered.connect(self.run)
-        self.iface.addToolBarIcon(self.action)
+        modes = [
+            {'name': 'Normal', 'effect': -1},
+            {'name': 'Grayscale', 'effect': QgsPreviewEffect.PreviewGrayscale},
+            {'name': 'Mono', 'effect': QgsPreviewEffect.PreviewMono},
+            {'name': 'Protanope', 'effect': QgsPreviewEffect.PreviewProtanope},
+            {'name': 'Deuteranope', 'effect': QgsPreviewEffect.PreviewDeuteranope}
+        ]
+        for mode in modes:
+            action = QAction(mode['name'], self.iface.mainWindow())
+            action.preview_effect = mode['effect']
+            action.triggered.connect(partial(self.setPreviewMode, action))
+            self.iface.addToolBarIcon(action)
+            self.actions.append(action)
+
 
     def unload(self):
-        self.action.triggered.disconnect(self.run)
-        self.iface.removeToolBarIcon(self.action)
-        del self.action
+        for action in self.actions:
+            self.iface.removeToolBarIcon(action)
+            del action
+        self.actions = []
 
-    def run(self):
-        self.iface.mapCanvas().setPreviewModeEnabled(not self.iface.mapCanvas().previewModeEnabled())
+
+    def log(self, message, tab='preview mode plugin'):
+        if self.do_log:
+            QgsMessageLog.logMessage(str(message), tab, level=Qgis.Info)
+
+
+    def setPreviewMode(self, button):
+        #self.log(button.preview_effect)
+        self.iface.mapCanvas().setPreviewModeEnabled(button.preview_effect >= 0)
+        if button.preview_effect >= 0:
+            self.iface.mapCanvas().setPreviewMode(button.preview_effect)
