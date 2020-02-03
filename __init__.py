@@ -40,6 +40,7 @@ class PreviewModePlugin:
 
 
     def initGui(self):
+        self.toolbar = self.iface.addToolBar("Preview Mode Toolbar")
         modes = [
             {'name': 'Normal', 'effect': -1},
             {'name': 'Grayscale', 'effect': QgsPreviewEffect.PreviewGrayscale},
@@ -51,15 +52,18 @@ class PreviewModePlugin:
             action = QAction(mode['name'], self.iface.mainWindow())
             action.preview_effect = mode['effect']
             action.triggered.connect(partial(self.setPreviewMode, action))
-            self.iface.addToolBarIcon(action)
+            #self.iface.addToolBarIcon(action)
+            self.toolbar.addAction(action)
             self.actions.append(action)
 
 
     def unload(self):
         for action in self.actions:
-            self.iface.removeToolBarIcon(action)
+            #self.iface.removeToolBarIcon(action)
+            self.toolbar.removeAction(action)
             del action
         self.actions = []
+        del self.toolbar
 
 
     def log(self, message, tab='preview mode plugin'):
