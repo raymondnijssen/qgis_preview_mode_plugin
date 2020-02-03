@@ -21,9 +21,12 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #---------------------------------------------------------------------
 
+import os
+
 from functools import partial
 
 from PyQt5.QtWidgets import QAction
+from PyQt5.QtGui import QIcon
 
 from qgis.core import QgsMessageLog, Qgis
 from qgis.gui import QgsPreviewEffect
@@ -35,6 +38,7 @@ def classFactory(iface):
 class PreviewModePlugin:
     def __init__(self, iface):
         self.iface = iface
+        self.plugin_dir = os.path.dirname(__file__)
         self.do_log = True
         self.actions = []
 
@@ -49,17 +53,16 @@ class PreviewModePlugin:
             {'name': 'Deuteranope', 'effect': QgsPreviewEffect.PreviewDeuteranope}
         ]
         for mode in modes:
-            action = QAction(mode['name'], self.iface.mainWindow())
+            icon = QIcon(os.path.join(self.plugin_dir, 'icon_{}.svg'.format(mode['name'].lower())))
+            action = QAction(icon, mode['name'], self.iface.mainWindow())
             action.preview_effect = mode['effect']
             action.triggered.connect(partial(self.setPreviewMode, action))
-            #self.iface.addToolBarIcon(action)
             self.toolbar.addAction(action)
             self.actions.append(action)
 
 
     def unload(self):
         for action in self.actions:
-            #self.iface.removeToolBarIcon(action)
             self.toolbar.removeAction(action)
             del action
         self.actions = []
