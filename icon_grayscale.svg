@@ -14,7 +14,7 @@
    height="24"
    width="24"
    sodipodi:docname="icon_grayscale.svg"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -24,17 +24,17 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="2351"
-     inkscape:window-height="1634"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
      id="namedview35"
      showgrid="false"
      inkscape:zoom="20.48"
-     inkscape:cx="19.866336"
-     inkscape:cy="-0.72090923"
-     inkscape:window-x="622"
-     inkscape:window-y="493"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="layer1"
+     inkscape:cx="3.4112579"
+     inkscape:cy="12.645228"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer2"
      showguides="true"
      inkscape:guide-bbox="true" />
   <defs
@@ -62,6 +62,71 @@
        r="12"
        gradientUnits="userSpaceOnUse"
        spreadMethod="pad" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4595">
+      <rect
+         ry="1.5625"
+         y="0.94948387"
+         x="0.94948387"
+         height="22.101032"
+         width="22.101032"
+         id="rect4597"
+         style="display:inline;opacity:1;fill:#bbbbbb;fill-opacity:0.56707315;stroke:none;stroke-width:0.99665833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         rx="1.5625" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4591">
+      <rect
+         ry="1.5625"
+         y="0.94948387"
+         x="0.94948387"
+         height="22.101032"
+         width="22.101032"
+         id="rect4593"
+         style="display:inline;opacity:1;fill:#bbbbbb;fill-opacity:0.56707315;stroke:none;stroke-width:0.99665833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         rx="1.5625" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4587">
+      <rect
+         ry="1.5625"
+         y="0.94948387"
+         x="0.94948387"
+         height="22.101032"
+         width="22.101032"
+         id="rect4589"
+         style="display:inline;opacity:1;fill:#bbbbbb;fill-opacity:0.56707315;stroke:none;stroke-width:0.99665833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         rx="1.5625" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4583">
+      <rect
+         ry="1.5625"
+         y="0.94948387"
+         x="0.94948387"
+         height="22.101032"
+         width="22.101032"
+         id="rect4585"
+         style="display:inline;opacity:1;fill:#bbbbbb;fill-opacity:0.56707315;stroke:none;stroke-width:0.99665833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         rx="1.5625" />
+    </clipPath>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter4609"
+       x="-0.14819616"
+       width="1.2963923"
+       y="-0.14003492"
+       height="1.2800698">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.96156247"
+         id="feGaussianBlur4611" />
+    </filter>
   </defs>
   <metadata
      id="metadata5">
@@ -71,15 +136,52 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
      inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="stripes">
+    <rect
+       style="opacity:1;fill:#e6e6e6;fill-opacity:1;stroke:none;stroke-width:3.99999952;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4529"
+       width="35.351562"
+       height="5.5252495"
+       x="-4.7851562"
+       y="0.94951683"
+       clip-path="url(#clipPath4595)" />
+    <rect
+       y="6.4747663"
+       x="-4.7851562"
+       height="5.5252495"
+       width="35.351562"
+       id="rect4531"
+       style="opacity:1;fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:3.99999952;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       clip-path="url(#clipPath4591)" />
+    <rect
+       style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:3.99999952;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4533"
+       width="35.351562"
+       height="5.5252495"
+       x="-4.7851562"
+       y="12.000015"
+       clip-path="url(#clipPath4587)" />
+    <rect
+       y="17.525267"
+       x="-4.7851562"
+       height="5.5252495"
+       width="35.351562"
+       id="rect4535"
+       style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:3.99999952;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       clip-path="url(#clipPath4583)" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="background"
-     style="display:inline">
+     style="display:none">
     <rect
        style="opacity:1;fill:#bbbbbb;fill-opacity:0.56707315;stroke:none;stroke-width:0.99665833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect826"
@@ -93,23 +195,25 @@
      inkscape:groupmode="layer"
      id="layer1"
      inkscape:label="objects">
-    <circle
-       style="display:inline;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:7.55905533;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="path830"
-       cx="6.8847656"
-       cy="7.0078125"
-       r="3" />
-    <circle
-       style="display:inline;opacity:1;fill:#424242;fill-opacity:1;stroke:none;stroke-width:7.55905533;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="path830-6"
-       cx="17.529297"
-       cy="9.8886719"
-       r="3" />
-    <circle
-       style="display:inline;opacity:1;fill:#a9a9a9;fill-opacity:1;stroke:none;stroke-width:7.55905533;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="path830-6-9"
-       cx="10.595703"
-       cy="16.773439"
-       r="3" />
+    <text
+       id="text4559"
+       y="20.239908"
+       x="2.1110029"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.66666667px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.5;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter4609);"
+       xml:space="preserve"><tspan
+         sodipodi:role="line"
+         id="tspan840">G</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.66666667px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;"
+       x="2.1110029"
+       y="20.239908"
+       id="text4554"><tspan
+         sodipodi:role="line"
+         id="tspan838">G</tspan></text>
   </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="letter" />
 </svg>
