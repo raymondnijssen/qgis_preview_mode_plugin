@@ -1,7 +1,29 @@
 [general]
 name=Preview Mode Plugin
-description=Shows toolbar for setting map preview mode.
-version=0.1
+description=Adds a toolbar for setting the map preview mode.
+
+version=0.1.0
 qgisMinimumVersion=3.0
-author=Raymond Nijssen
+qgisMaximumVersion=3.99
+
+author=Raymond Nijssen, Michele Tobias
 email=r.nijssen@terglobo.nl
+
+changelog=
+    0.1.0   (02-2020) Initial experimental version
+
+tracker=https://github.com/raymondnijssen/qgis_preview_mode_plugin/issues
+homepage=https://github.com/raymondnijssen/qgis_preview_mode_plugin
+repository=https://github.com/raymondnijssen/qgis_preview_mode_plugin
+
+tags=Map, preview, mode, normal, grayscale, gray scale, mono, monochrome, color, blindness, protanope, deuteranope, toolbar
+
+experimental=True
+
+about=Having to go through the menu to turn on and off the different Preview
+    Modes is cumbersome when trying to make changes to colors and check
+    quickly if the changes work for various color perceptions or for grayscale
+    printing. Having something right on the screen to toggle the modes
+    makes it much quicker and easier to find.
+
+icon=icon_protanope.svg
