@@ -22,8 +22,7 @@ import os
 
 from functools import partial
 
-from PyQt5.QtWidgets import QAction
-from PyQt5.QtGui import QIcon
+from PyQt6.QtGui import QAction, QIcon
 
 from qgis.core import QgsMessageLog, Qgis
 from qgis.gui import QgsPreviewEffect

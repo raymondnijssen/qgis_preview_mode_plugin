@@ -2,9 +2,10 @@
 name=Preview Mode Plugin
 description=Adds a toolbar for setting the map preview mode.
 
-version=0.1.0
+version=0.2.0
 qgisMinimumVersion=3.0
-qgisMaximumVersion=3.99
+qgisMaximumVersion=4.98
+supportsQt6=True
 
 author=Raymond Nijssen, Michele Tobias
 email=r.nijssen@terglobo.nl
