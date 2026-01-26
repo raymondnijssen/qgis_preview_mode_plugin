@@ -38,7 +38,6 @@ class PreviewModePlugin:
         self.do_log = True
         self.actions = []
 
-
     def initGui(self):
         self.toolbar = self.iface.addToolBar("Preview Mode Toolbar")
         modes = [
@@ -56,7 +55,6 @@ class PreviewModePlugin:
             self.toolbar.addAction(action)
             self.actions.append(action)
 
-
     def unload(self):
         for action in self.actions:
             self.toolbar.removeAction(action)
@@ -64,11 +62,9 @@ class PreviewModePlugin:
         self.actions = []
         del self.toolbar
 
-
     def log(self, message, tab='preview mode plugin'):
         if self.do_log:
             QgsMessageLog.logMessage(str(message), tab, level=Qgis.Info)
-
 
     def set_preview_mode(self, button):
         #self.log(button.preview_effect)
