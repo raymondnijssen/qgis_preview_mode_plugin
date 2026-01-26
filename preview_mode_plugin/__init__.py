@@ -52,7 +52,7 @@ class PreviewModePlugin:
             icon = QIcon(os.path.join(self.plugin_dir, 'icon_{}.svg'.format(mode['name'].lower())))
             action = QAction(icon, mode['name'], self.iface.mainWindow())
             action.preview_effect = mode['effect']
-            action.triggered.connect(partial(self.setPreviewMode, action))
+            action.triggered.connect(partial(self.set_preview_mode, action))
             self.toolbar.addAction(action)
             self.actions.append(action)
 
@@ -70,7 +70,7 @@ class PreviewModePlugin:
             QgsMessageLog.logMessage(str(message), tab, level=Qgis.Info)
 
 
-    def setPreviewMode(self, button):
+    def set_preview_mode(self, button):
         #self.log(button.preview_effect)
         self.iface.mapCanvas().setPreviewModeEnabled(button.preview_effect >= 0)
         if button.preview_effect >= 0:
