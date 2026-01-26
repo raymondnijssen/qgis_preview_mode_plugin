@@ -3,7 +3,7 @@ name=Preview Mode Switcher
 description=Adds a toolbar for quickly switching the map preview (color blind) modes.
 
 version=1.0.0
-qgisMinimumVersion=3.99
+qgisMinimumVersion=3.43
 qgisMaximumVersion=4.98
 supportsQt6=True
 
